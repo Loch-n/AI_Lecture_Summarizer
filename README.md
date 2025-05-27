@@ -1,13 +1,10 @@
 ---
-title: Lecture Capture AI Pipeline
-emoji: 🎓
-colorFrom: blue
-colorTo: purple
+Title: Lecture Capture AI Pipeline
 sdk: gradio
 sdk_version: 4.44.0
 app_file: app.py
 pinned: false
-license: mit
+license: MIT
 python_version: 3.10
 ---
 
@@ -72,41 +69,3 @@ If you encounter issues, please check:
 3. Video length is under 15 minutes
 
 For technical issues, please open an issue on the repository.
-\`\`\`
-
-```dockerfile file="Dockerfile" type="code"
-FROM python:3.10-slim
-
-# Install system dependencies including FFmpeg
-RUN apt-get update && apt-get install -y \
-    ffmpeg \
-    git \
-    && rm -rf /var/lib/apt/lists/*
-
-# Set working directory
-WORKDIR /app
-
-# Copy requirements first for better caching
-COPY requirements.txt .
-
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Download spaCy model
-RUN python -m spacy download en_core_web_sm
-
-# Copy application code
-COPY . .
-
-# Create necessary directories
-RUN mkdir -p /tmp/lecture_capture
-
-# Set environment variables
-ENV GRADIO_SERVER_NAME="0.0.0.0"
-ENV GRADIO_SERVER_PORT=7860
-
-# Expose port
-EXPOSE 7860
-
-# Run the application
-CMD ["python", "app.py"]
