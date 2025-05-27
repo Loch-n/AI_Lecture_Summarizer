@@ -1,0 +1,9 @@
+include README.md
+include requirements.txt
+include Dockerfile
+include .gitignore
+include spaces_config.yml
+recursive-include static *
+recursive-include templates *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

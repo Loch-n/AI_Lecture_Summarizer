@@ -1,0 +1,31 @@
+{
+  "name": "lecture-capture-ai",
+  "version": "1.0.0",
+  "description": "AI-powered lecture video processing pipeline",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "test": "python -m pytest tests/",
+    "lint": "flake8 app.py",
+    "format": "black app.py"
+  },
+  "keywords": [
+    "ai",
+    "machine-learning",
+    "video-processing",
+    "transcription",
+    "summarization",
+    "education",
+    "lecture-capture"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/lecture-capture-ai"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/lecture-capture-ai/issues"
+  },
+  "homepage": "https://huggingface.co/spaces/yourusername/lecture-capture-ai"
+}

@@ -1,0 +1,29 @@
+# Hugging Face Spaces Configuration
+title: "Lecture Capture AI Pipeline"
+emoji: "🎓"
+colorFrom: "blue"
+colorTo: "purple"
+sdk: "gradio"
+sdk_version: "4.44.0"
+app_file: "app.py"
+pinned: false
+license: "mit"
+python_version: "3.10"
+
+# Hardware requirements
+hardware: "cpu-basic"  # or "cpu-upgrade" for better performance
+
+# Environment variables (if needed)
+# env:
+#   - name: "CUSTOM_VAR"
+#     value: "custom_value"
+
+# Secrets (configure in HF Spaces settings)
+# secrets:
+#   - "HF_TOKEN"
+
+# Disable automatic model downloads in Spaces
+disable_embedding: false
+
+# Custom startup command (optional)
+# startup_duration_timeout: 300
