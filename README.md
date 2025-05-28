@@ -8,14 +8,14 @@ license: MIT
 python_version: 3.10
 ---
 
-# 🎓 Lecture Capture AI Pipeline
+# Lecture Capture AI Pipeline
 
 An AI-powered tool that automatically processes lecture videos to generate:
 
-- 📝 **Transcription** with precise timestamps
-- 📋 **Summaries** for each video segment
-- 🔑 **Key phrases** extraction
-- 🎯 **Timeline** organization
+-  **Transcription** with precise timestamps
+-  **Summaries** for each video segment
+-  **Key phrases** extraction
+-  **Timeline** organization
 
 ## Features
 
